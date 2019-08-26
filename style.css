@@ -1,0 +1,49 @@
+* {
+  font-family: "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+  font: 67.5%;
+  color: rgb(46, 45, 45);
+}
+.game-container {
+  text-align: center;
+  line-height: 0.3rem;
+}
+table {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.game {
+  text-align: center;
+}
+tr,
+td {
+  height: 4rem;
+  width: 4rem;
+}
+button {
+  display: inline-block;
+  font-size: 5rem;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  border: 0.2rem solid black;
+  background: rgb(107, 106, 106);
+  transition: all 1s;
+}
+button:active {
+  animation: slideIn 0.2s ease-out;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-180deg) scale(1.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
